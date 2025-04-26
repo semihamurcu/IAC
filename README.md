@@ -1,5 +1,9 @@
 Week 1
 
+Er is gebruik gemaakt van AI (Chatgpt) om de opdracht te voltooien:
+https://chatgpt.com/share/680cf45f-d230-8007-bffb-ceb605e6df4a
+
+
 1. Ansible geïnstalleerd via WSL:
 
 sudo apt update
