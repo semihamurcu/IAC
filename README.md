@@ -19,7 +19,8 @@ Voeg dit toe om ESXi te pingen:
 192.168.1.3 ansible_user=root ansible_ssh_pass=Welkom01! ansible_connection=ssh
 
 
-4. Maak een Ansible configuratiebestand aan (optioneel maar handig):
+4. Maak een Ansible configuratiebestand aan:
+
 touch ansible.cfg
 Inhoud:
 [defaults]
