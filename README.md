@@ -29,8 +29,10 @@ host_key_checking = False
 
 
 5. Installeer sshpass zodat Ansible wachtwoorden kan gebruiken:
+
 sudo apt install sshpass -y
 
 
-6. Test de verbinding
+7. Test de verbinding
+   
 ansible esxi -m ping
