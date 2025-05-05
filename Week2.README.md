@@ -13,7 +13,6 @@ terraform {
     esxi = {
       source = "registry.terraform.io/josenk/esxi"
     }
-
     azurerm = {
       source  = "hashicorp/azurerm"
       version = "~> 3.0"
