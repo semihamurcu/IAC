@@ -40,37 +40,23 @@ provider "azurerm" {
 
 (ESXi) Maak een terraform manifest voor 1 Ubuntu VM met 1 vcpu en 1024MB geheugen. Je zult zien dat de VM start en dat via de remote console van ESXi een prompt kunt zien. Maar je kunt er nog niks mee… Daarom mag je de VM verwijderen. De code bewaar je wel.
 
+resource "esxi_guest" "vm_opdracht_1A_Semih" {
+  guest_name     = "vm_opdracht_1A_Semih"  # Naam van de VM zoals aangegeven in de opdracht
+  disk_store     = "datastore1"
+  ovf_source     = "https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.ova"  # Ubuntu Cloud Image
 
-<button onclick="copyCode()">Copy to clipboard</button>
+  numvcpus       = 1                           # Aantal vCPUs, zoals gevraagd in de opdracht
+  memsize        = 1024                        # 1024MB geheugen
+  guest_id       = "ubuntu64Guest"             # Specifieke guest OS identificatie voor Ubuntu
 
-<script>
-function copyCode() {
-  var code = `
-    # Je Terraform code hier
-    resource "esxi_guest" "vm_opdracht_1A_Semih" {
-      guest_name     = "vm_opdracht_1A_Semih"
-      disk_store     = "datastore1"
-      ovf_source     = "https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.ova"
-      numvcpus       = 1
-      memsize        = 1024
-      guest_id       = "ubuntu64Guest"
-      network_interfaces {
-        virtual_network = "VM Network"
-      }
-      disk {
-        size = 10
-      }
-    }
-  `;
-  navigator.clipboard.writeText(code).then(function() {
-    alert("Code copied to clipboard!");
-  }, function() {
-    alert("Failed to copy code.");
-  });
+  network_interfaces {
+    virtual_network = "VM Network"             # Het netwerk waaraan de VM wordt gekoppeld
+  }
+
+  disk {
+    size = 10                                    # Schijfgrootte in GB, je kunt dit verder aanpassen als het groter moet zijn
+  }
 }
-</script>
-
-
 
 #   2.3  Opdracht 1B  :
 (Azure) Maak een terraform manifest voor 1 Ubuntu VM, gebaseerd op de Standard_B2ats_v2 sizing.
