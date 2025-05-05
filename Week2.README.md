@@ -1,16 +1,13 @@
 Week 2
 
-2.1 Gebruik gemaakt van deze bron om Terraform te installeren:
+# 2.1 Gebruik gemaakt van deze bron om Terraform te installeren:
 
 https://www.youtube.com/watch?v=Vt_Wd_tYFco
 
 
 
+# 2.2 Providers.tf gemaakt
 
-2.2 Providers.tf gemaakt
-
-
-# Definieer de vereiste providers voor dit project
 terraform {
   required_providers {
     esxi = {
@@ -24,7 +21,6 @@ terraform {
   }
 }
 
-# ESXi provider configuratie
 provider "esxi" {
   esxi_hostname = "192.168.1.3"
   esxi_hostport = "22"
@@ -33,7 +29,6 @@ provider "esxi" {
   esxi_password = "Welkom01!"
 }
 
-# Azure provider configuratie
 provider "azurerm" {
   resource_provider_registrations = "none"
   subscription_id                = "c064671c-8f74-4fec-b088-b53c568245eb"
@@ -41,11 +36,11 @@ provider "azurerm" {
 }
 
 
-2.3  Opdracht 1 :
+# 2.3  Opdracht 1A  :
 
-A. (ESXi) Maak een terraform manifest voor 1 Ubuntu VM met 1 vcpu en 1024MB geheugen. Je zult zien dat de VM start en dat via de remote console van ESXi een prompt kunt zien. Maar je kunt er nog niks mee… Daarom mag je de VM verwijderen. De code bewaar je wel.
+(ESXi) Maak een terraform manifest voor 1 Ubuntu VM met 1 vcpu en 1024MB geheugen. Je zult zien dat de VM start en dat via de remote console van ESXi een prompt kunt zien. Maar je kunt er nog niks mee… Daarom mag je de VM verwijderen. De code bewaar je wel.
 
-```html
+
 <button onclick="copyCode()">Copy to clipboard</button>
 
 <script>
@@ -76,4 +71,7 @@ function copyCode() {
 </script>
 
 
-B. (Azure) Maak een terraform manifest voor 1 Ubuntu VM, gebaseerd op de Standard_B2ats_v2 sizing.
+
+#   2.3  Opdracht 1B  :
+(Azure) Maak een terraform manifest voor 1 Ubuntu VM, gebaseerd op de Standard_B2ats_v2 sizing.
+
