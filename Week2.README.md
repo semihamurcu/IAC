@@ -1,13 +1,14 @@
-Week 2
+# Week 2
 
-# 2.1 Gebruik gemaakt van deze bron om Terraform te installeren:
+## 2.1 Gebruik gemaakt van deze bron om Terraform te installeren:
 
-https://www.youtube.com/watch?v=Vt_Wd_tYFco
+[Installeren van Terraform via YouTube](https://www.youtube.com/watch?v=Vt_Wd_tYFco)
 
+---
 
+## 2.2 Providers.tf gemaakt
 
-# 2.2 Providers.tf gemaakt
-
+```hcl
 terraform {
   required_providers {
     esxi = {
