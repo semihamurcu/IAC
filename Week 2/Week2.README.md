@@ -4,36 +4,11 @@
 
 [Installeren van Terraform via YouTube](https://www.youtube.com/watch?v=Vt_Wd_tYFco)
 
----
+Achteraf heb ik alles opnieuw moeten doen want WSL werkt niet.
 
-## 2.2 Providers.tf gemaakt
+Stappen van installatie gevolgd van brightspace
 
-```hcl
-terraform {
-  required_providers {
-    esxi = {
-      source = "registry.terraform.io/josenk/esxi"
-    }
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 3.0"
-    }
-  }
-}
-
-provider "esxi" {
-  esxi_hostname = "192.168.1.3"
-  esxi_hostport = "22"
-  esxi_hostssl  = "443"
-  esxi_username = "root"
-  esxi_password = "Welkom01!"
-}
-
-provider "azurerm" {
-  resource_provider_registrations = "none"
-  subscription_id                = "c064671c-8f74-4fec-b088-b53c568245eb"
-  features {}
-}
+2.2 Providers.tf gemaakt -> Zie hiervoor providers.tf
 
 
 # 2.3  Opdracht 1A  :
@@ -58,6 +33,12 @@ resource "esxi_guest" "vm_opdracht_1A_Semih" {
   }
 }
 
+
+Eindresultaat = 
+
+![alt text](<1A SS-1.png>)
+
 #   2.3  Opdracht 1B  :
 (Azure) Maak een terraform manifest voor 1 Ubuntu VM, gebaseerd op de Standard_B2ats_v2 sizing.
+
 
