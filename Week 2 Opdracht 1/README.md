@@ -8,6 +8,11 @@ Achteraf heb ik alles opnieuw moeten doen want WSL werkt niet.
 
 Stappen van installatie gevolgd van brightspace
 
+En ik heb AI gebruikt voor de scripts.
+
+https://chatgpt.com/share/681cb3c0-52b4-8002-9184-8180f7d01dc2
+
+
 # 2.2 Bestandenstructuur en toelichting 
 
 🔹 variables.tf
