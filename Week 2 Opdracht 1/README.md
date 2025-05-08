@@ -8,7 +8,19 @@ Achteraf heb ik alles opnieuw moeten doen want WSL werkt niet.
 
 Stappen van installatie gevolgd van brightspace
 
-2.2 Providers.tf gemaakt -> Zie hiervoor providers.tf
+# 2.2 Bestandenstructuur en toelichting 
+
+🔹 variables.tf
+
+Deze variabelen zorgen ervoor dat de configuratie makkelijk herbruikbaar is, zonder hardcoded waardes.
+
+🔹 terraform.tfvars
+
+In dit bestand worden de waardes toegekend aan de variabelen die zijn gedefinieerd in variables.tf.
+
+🔹 providers.tf
+
+In dit bestand definieer je welke cloud- of virtualisatieproviders Terraform moet gebruiken.
 
 
 # 2.3  Opdracht 1A  :
