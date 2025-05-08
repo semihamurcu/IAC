@@ -15,22 +15,7 @@ Stappen van installatie gevolgd van brightspace
 
 (ESXi) Maak een terraform manifest voor 1 Ubuntu VM met 1 vcpu en 1024MB geheugen. Je zult zien dat de VM start en dat via de remote console van ESXi een prompt kunt zien. Maar je kunt er nog niks mee… Daarom mag je de VM verwijderen. De code bewaar je wel.
 
-<pre> ```hcl 
-resource "esxi_guest" "vm_opdracht_1A_Semih" {
-  guest_name     = "vm_opdracht_1A_Semih"  # Naam van de VM zoals aangegeven in de opdracht
-  disk_store     = "Datastore1"
-  ovf_source     = "https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.ova"  # Ubuntu Cloud Image
-
-  numvcpus       = 1                           # Aantal vCPUs, zoals gevraagd in de opdracht
-  memsize        = 1024                        # 1024MB geheugen
-
-  network_interfaces {
-    virtual_network = "VM Network"             # Het netwerk waaraan de VM wordt gekoppeld
-  }
-
-}
- ``` </pre>
-
+Zie script in main.tf
 
 Eindresultaat = 
 
@@ -39,4 +24,8 @@ Eindresultaat =
 #   2.3  Opdracht 1B  :
 (Azure) Maak een terraform manifest voor 1 Ubuntu VM, gebaseerd op de Standard_B2ats_v2 sizing.
 
+Zie script in main.tf
 
+Eindresultaat = 
+
+![alt text](image.png)

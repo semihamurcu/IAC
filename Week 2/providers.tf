@@ -19,6 +19,8 @@ provider "esxi" {
 }
 
 provider "azurerm" {
-  features {}
+  resource_provider_registrations = "none"
   subscription_id = "c064671c-8f74-4fec-b088-b53c568245eb"
+  features {}
 }
+
