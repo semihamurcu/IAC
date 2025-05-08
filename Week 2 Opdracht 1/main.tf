@@ -2,19 +2,14 @@
 
 resource "esxi_guest" "vm_opdracht_1A_Semih" {
   guest_name     = "vm_opdracht_1A_Semih"  # Naam van de VM zoals aangegeven in de opdracht
-  disk_store     = "datastore1"
+  disk_store     = "Datastore1"
   ovf_source     = "https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.ova"  # Ubuntu Cloud Image
 
   numvcpus       = 1                           # Aantal vCPUs, zoals gevraagd in de opdracht
   memsize        = 1024                        # 1024MB geheugen
-  guest_id       = "ubuntu64Guest"             # Specifieke guest OS identificatie voor Ubuntu
-
+  
   network_interfaces {
     virtual_network = "VM Network"             # Het netwerk waaraan de VM wordt gekoppeld
-  }
-
-  disk {
-    size = 10                                    # Schijfgrootte in GB, je kunt dit verder aanpassen als het groter moet zijn
   }
 }
 

@@ -27,6 +27,9 @@ In dit bestand worden de waardes toegekend aan de variabelen die zijn gedefiniee
 
 In dit bestand definieer je welke cloud- of virtualisatieproviders Terraform moet gebruiken.
 
+🔹 main.tf
+
+In dit bestand staan de infrastructuurdefinities (VMs, netwerken, etc.)
 
 # 2.3  Opdracht 1A  :
 
