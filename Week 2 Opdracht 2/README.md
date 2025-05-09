@@ -20,26 +20,13 @@ Ook definieer je hier de authenticatiegegevens of verwijs je naar een lokale con
 🔹 main.tf
 Dit is het hoofdscript waarin alle resources gedefinieerd worden:
 
-Virtual Network (VNet)
-
-Subnet
-
-Public IP-adressen
-
-Network Interfaces
-
-Virtual Machines
-
-CloudInit-configuratie
-
-Eventuele lokale outputs zoals IP-adressen in een .txt bestand
-
-🔹 outputs.tf (optioneel)
-Geeft belangrijke resultaten van de deployment weer, zoals publieke IP-adressen van de VM’s, zodat je deze makkelijk kunt gebruiken of documenteren.
-
-🔹 cloud-init/init.yaml (optioneel)
-Bevat het CloudInit script dat wordt uitgevoerd tijdens de eerste boot van de VM’s.
-Hiermee kun je bijvoorbeeld automatisch een bestand hello.txt aanmaken in /home/iac.
+* Virtual Network (VNet)
+* Subnet
+* Public IP-adressen
+* Network Interfaces
+* Virtual Machines
+* CloudInit-configuratie
+* Eventuele lokale outputs zoals IP-adressen in een .txt bestand
 
 🔹 public_ips.txt (gegenereerd)
 Wordt door Terraform gegenereerd met de publieke IP-adressen van de aangemaakte VM’s.
