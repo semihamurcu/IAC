@@ -1,3 +1,8 @@
+# 2.1 Bronnen
+
+https://chatgpt.com/share/681cb3c0-52b4-8002-9184-8180f7d01dc2
+
+
 # 2.2 Bestandenstructuur en toelichting
 🔹 variables.tf
 In dit bestand definieer je de variabelen die gebruikt worden in de Terraform-configuratie.
