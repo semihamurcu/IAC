@@ -52,5 +52,5 @@ Maak in je Terraform manifest gebruik van variabelen waar dit kan. Zet deze vari
 
 Eindresultaat = 
 
-<video controls src="2B Resultaat .mp4" title="Title"></video>
+Zie 2B Resultaat.mp4
 
