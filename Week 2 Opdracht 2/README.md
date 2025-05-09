@@ -38,6 +38,21 @@ Wordt door Terraform gegenereerd met de publieke IP-adressen van de aangemaakte 
 Handig voor documentatie of om makkelijk verbinding te maken.
 
 
+# A. (ESXi) Maak een terraform deployment file waarin je in totaal 3 Ubuntu VM’s deployed met 1 vcpu en 2048MB geheugen, met de volgende kenmerken:
+
+Je hebt het Ubuntu 24.04 cloudimage gebruikt
+Er is een resource voor 2 Ubuntu VM’s die de naam webserver hebben
+Er is een resource voor 1 Ubuntu VM die de naam databaseserver heeft.
+Via cloudinit maak je op de 3 vm’s een gebruiker aan met sudo rechten zonder dat er alsnog een wachtwoord wordt gevraagd. (De volgende criteria zoek je zelf op in de voorbeelden van de provider, zie voor de link hieronder)
+Via cloudinit zet je je public ssh-key (let op gebruik je ED25519 key) op de 3 vm’s gezet
+Via cloudinit installeer je de packages wget en ntpdate.
+Het ip adres van elke machine komt in een bestand op je beheer systeem.
+Maak in je Terraform manifest gebruik van variabelen waar dit kan. Zet deze variabelen in een apart bestand.
+
+Eindresultaat = 
+
+
+
 
 # B. (Azure) Maak 1 terraform manifest waarin je 2 Ubuntu 24.04 VM in Azure deployed met de volgende kenmerken:
 
