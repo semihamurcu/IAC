@@ -36,3 +36,21 @@ Dit is het hoofdscript waarin alle resources gedefinieerd worden:
 🔹 public_ips.txt (gegenereerd)
 Wordt door Terraform gegenereerd met de publieke IP-adressen van de aangemaakte VM’s.
 Handig voor documentatie of om makkelijk verbinding te maken.
+
+
+
+# B. (Azure) Maak 1 terraform manifest waarin je 2 Ubuntu 24.04 VM in Azure deployed met de volgende kenmerken:
+
+De VM is van het type “Standard_B2ats_v2”
+Je eerder geuploade SSH key wordt gebruikt.
+Je VM heeft een publiek IP adres
+Je maakt de user ‘iac’ aan.
+Via CloudInit wordt er een bestand ‘hello.txt’ in /home/iac geplaatst met de inhoud ‘Hello World’
+Het ip adres van elke machine komt in een bestand op je beheer systeem.
+Het moet dus 1 manifest zijn waarin 2 dezelfde VM’s aangemaakt worden.
+Maak in je Terraform manifest gebruik van variabelen waar dit kan. Zet deze variabelen in een apart bestand.
+
+Eindresultaat = 
+
+<video controls src="2B Resultaat .mp4" title="Title"></video>
+
